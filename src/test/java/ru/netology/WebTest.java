@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class webTest {
+public class WebTest {
     private WebDriver driver;
 
     @BeforeAll
@@ -32,7 +32,7 @@ public class webTest {
 
     @Test
     void shouldBeSuccess() {
-        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Селиверстова Дарья");
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Сел-иверстова Дарья");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79265555555");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button")).click();
